@@ -45,6 +45,10 @@
   .notes h3 { font-family: var(--heading); font-size: 20px; font-weight: 700; margin: 0 0 12px; }
   .notes ul { margin: 0; padding-left: 20px; }
   .notes li { font-size: 16px; line-height: 1.6; margin-bottom: 6px; max-width: 70ch; }
+  .tag.a11y { background: #DCEFE4; color: #15683f; }
+  .open.secondary { background: #fff; color: #2B4380; border: 2px solid #2B4380; padding: 9px 20px; }
+  .open.secondary:hover { background: #F1F5FB; color: #2B4380; }
+  .btnrow { margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px; }
   @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 31px; } }
 </style>
 </head>
@@ -72,7 +76,7 @@
             <span class="tag mid">Mid-fidelity</span>
             <h2>Mid-fi replica</h2>
             <p>A faithful coded rendition of the annotated wireframes — greyscale, functional, matching the original layout and states.</p>
-            <a class="open" href="https://dfo-proto.github.io/emt-elvers/lq-proto-test/recipient-search-mid-fi.html" target="_blank">Open prototype</a>
+            <a class="open" href="Recipient Search - Mid-fi.html">Open prototype</a>
           </div>
         </div>
         <div class="card">
@@ -81,7 +85,19 @@
             <span class="tag hi">Hi-fidelity &middot; GCDS</span>
             <h2>GC Design System version</h2>
             <p>The same flow styled to the GC Design System — FIP signature, Lato/Noto type, GCDS tabs, and a striped results table.</p>
-            <a class="open" href="https://dfo-proto.github.io/emt-elvers/lq-proto-test/recipient-search-gcds.html" target="_blank">Open prototype</a>
+            <a class="open" href="Recipient Search - GCDS.html">Open prototype</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top"></div>
+          <div class="inner">
+            <span class="tag a11y">Accessibility-first</span>
+            <h2>Accessibility prototype</h2>
+            <p>The GCDS version rebuilt with semantic landmarks, one h1, native form controls with labelled helper text and errors, a real results table, an ARIA tab pattern, and visible focus — for testing in assistive tech (Fable) before development.</p>
+            <div class="btnrow">
+              <a class="open" href="Recipient Search - Accessible.html">Open prototype</a>
+              <a class="open secondary" href="Accessibility Implementation Report.html">Read the report</a>
+            </div>
           </div>
         </div>
       </div>
